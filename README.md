@@ -14,4 +14,8 @@
 
 ### Hints
 
-- We use Hamcrest as assertion library. If you don't know the syntax, you can look it up here: https://wiki.wdf.sap.corp/wiki/download/attachments/1588440504/JAVA_Hamcrest_cheatsheet.pdf
+- JUnit documentation: https://junit.org/junit4/
+- By design, JUnit, does not specify the execution order of test method invocations. And of course, well-written test code would **not assume any order**
+- If you want to use Hamcrest as assertion library to have assertions reading more fluently, find the documentation here: https://code.google.com/p/hamcrest/wiki/Tutorial
+- Use `@Before` for setup work before each test case, and `@BeforeClass` for setup work once before all test cases
+- Use `@Ignore` to temporary disable tests (works on method _and_ class level). This is better than just commenting out since you can see in the report if there are disabled tests. See also [JUnit: ignoring tests](https://github.com/junit-team/junit4/wiki/Ignoring-tests).
