@@ -15,7 +15,7 @@
 ### Hints
 
 - JUnit documentation: https://junit.org/junit4/
-- By design, JUnit, does not specify the execution order of test method invocations. And of course, well-written test code would **not assume any order**
+- By design the test runner does not guarantee the execution order of the tests - and of course, well-written test code should also not rely on it
 - If you want to use Hamcrest as assertion library to have assertions reading more fluently, find the documentation here: https://code.google.com/p/hamcrest/wiki/Tutorial
 - Use `@Before` for setup work before each test case, and `@BeforeClass` for setup work once before all test cases
 - Use `@Ignore` to temporary disable tests (works on method _and_ class level). This is better than just commenting out since you can see in the report if there are disabled tests. See also [JUnit: ignoring tests](https://github.com/junit-team/junit4/wiki/Ignoring-tests).
